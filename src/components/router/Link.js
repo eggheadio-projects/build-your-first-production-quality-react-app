@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 
 
 export class Link extends Component {
@@ -13,5 +14,5 @@ export class Link extends Component {
 }
 
 Link.propTypes = {
-  to: React.PropTypes.string.isRequired
+  to: PropTypes.string.isRequired
 }

@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
 
+
 export class Link extends Component {
   handleClick = (evt) => {
     evt.preventDefault()
-    history.pushState(null, '', this.props.to)
+    window.history.pushState(null, '', this.props.to)
   }
 
   render() {

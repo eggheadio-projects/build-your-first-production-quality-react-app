@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
+
 
 export class Link extends Component {
   handleClick = (evt) => {
     evt.preventDefault()
-    history.pushState(null, '', this.props.to)
+    window.history.pushState(null, '', this.props.to)
   }
 
   render() {
@@ -12,5 +14,5 @@ export class Link extends Component {
 }
 
 Link.propTypes = {
-  to: React.PropTypes.string.isRequired
+  to: PropTypes.string.isRequired
 }

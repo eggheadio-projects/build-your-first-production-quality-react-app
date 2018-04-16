@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 
 export const TodoForm = (props) => (
   <form>
@@ -8,6 +10,6 @@ export const TodoForm = (props) => (
   </form>)
 
   TodoForm.propTypes = {
-    currentTodo: React.PropTypes.string.isRequired,
-    handleInputChange: React.PropTypes.func.isRequired
+    currentTodo: PropTypes.string.isRequired,
+    handleInputChange: PropTypes.func.isRequired
   }

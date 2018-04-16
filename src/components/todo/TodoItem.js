@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 
 export const TodoItem = (props) => {
   return (
@@ -9,7 +11,7 @@ export const TodoItem = (props) => {
 }
 
 TodoItem.propTypes = {
-  name: React.PropTypes.string.isRequired,
-  isComplete: React.PropTypes.bool,
-  id: React.PropTypes.number.isRequired
+  name: PropTypes.string.isRequired,
+  isComplete: PropTypes.bool,
+  id: PropTypes.number.isRequired
 }

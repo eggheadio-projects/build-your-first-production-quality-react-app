@@ -5,6 +5,7 @@ import {TodoForm, TodoList, Footer} from './components/todo'
 import {addTodo, generateId, findById, toggleTodo, updateTodo, removeTodo, filterTodos} from './lib/todoHelpers'
 import {pipe, partial} from './lib/utils'
 import {loadTodos, createTodo, saveTodo, destroyTodo} from './lib/todoService'
+import PropTypes from 'prop-types'
 
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
   }
 
   static contextTypes = {
-    route: React.PropTypes.string
+    route: PropTypes.string
   }
 
   componentDidMount() {

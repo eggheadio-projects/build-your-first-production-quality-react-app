@@ -1,5 +1,7 @@
 import React from 'react'
 import {partial} from '../../lib/utils'
+import PropTypes from 'prop-types'
+
 
 export const TodoItem = (props) => {
   const handleToggle = partial(props.handleToggle, props.id)
@@ -14,7 +16,7 @@ export const TodoItem = (props) => {
 }
 
 TodoItem.propTypes = {
-  name: React.PropTypes.string.isRequired,
-  isComplete: React.PropTypes.bool,
-  id: React.PropTypes.number.isRequired
+  name: PropTypes.string.isRequired,
+  isComplete: PropTypes.bool,
+  id: PropTypes.number.isRequired
 }
